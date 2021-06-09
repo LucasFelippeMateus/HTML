@@ -1,0 +1,96 @@
+<html>
+	<!--Anotações da segunda aula de html disponibilizada pelo professor Bruno através do link: https://www.youtube.com/watch?	v=DK1SZOpz2W8&list=PLx4x_zx8csUgS5ioRmQVBeGHmKBQEyNXQ&index=2-->
+	<head>
+		<title>Aula HTML 02</title>
+	</head>
+	<body>
+		<h1>Aula 02 - Listas</h1>
+		<p>Em html é possível trabalhar com dois tipos de listas, as listas ordenadas, que seguem uma sequência como 1,2,3,... ou a,b,c,..., e 				as listas não ordenadas, que possuem um símbolo ao lado de cada item. As listas ordenadas são definidas entre as tags < ol > < / ol > 				enquando que as não ordenadas são construídas dentro das tags < ul > < / ul >. Agora, para inserir itens dentros das listas, 				independentemente de serrem ordenadas ou não, utiliza-se a tag < li > < / li > de list item. Vejo um exemplo de cada tipo de lista a 				seguir.</p>
+		<h2>Lista ordenada</h2>
+		<ol>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ol>
+		<h2>Lista não ordenada</h2>
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ul>
+		<p>As listas, assim como outras tags, seguem um padrão: as ordenadas seguem a ordem numérica e as não ordenadas colocam uma bolinha 				preenchida. Para alterar dentre as possíveis opções faz-se a utilização de parâmetros dentro das tags, esses parâmetros nada mais fazem do 			que alterar a configuração padrão das tags. Observe a seguir a utilização do parâmetro type nos dois tipos de listas.</p>
+		<h2>Lista ordenada</h2>
+		<ol type="A"><!--Tipos para ol: i, I (numerais romanos minusculos e maiusculos) a, A (letras maiúsculas e minúsculas) 1 números-->
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ol>
+		<p>No caso das listas ordenadas por números temos um caso específico onde podemos trabalhar com outro parâmetro que é o start para 				indicar a partir de que número a contagem deve ser iniciada. Observe a seguir:</p>
+		<ol type="1" start="10">
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ol>
+		<h2>Lista não ordenada</h2>
+		<ul type="circle"> <!--Tipos para ul: disk, circle e square-->
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ul>
+		<p>Ao trabalhar com as listas também é possível criar subitens, basta criar uma nova lista, ordenada ou não, no ponto em que se deseja criar 		os subitens. Nas listas não ordenadas o primeiro nível de itens tem como padrão o disk enquanto o padrão do segundo nível é o circle e o 			padrão do terceiro nível é o square. Já nas listas ordenadas assume-se padrão o numérico em todos os níveis da lista. Veja um exemplo de uma 		lista com subitens a seguir:</p>
+		<h2>Lista ordenada</h2>
+		<ol>
+			<li>Item 1 (primeiro nível)</li>
+			<ol>
+				<li>Subitem 1 (segundo nível)</li>
+				<li>Subitem 2 (segundo nível)</li>
+				<ol>
+					<li>Subitem 3 (terceiro nível)</li>
+				</ol>
+			</ol>
+			<li>Item 2 (primeiro nível)</li>
+			<ol>
+				<li>Subitem 4 (segundo nível)</li>
+				<li>Subitem 5 (segundo nível)</li>
+				<ol>
+					<li>Subitem 6 (terceiro nível)</li>
+				</ol>
+			</ol>
+			<li>Item 3 (primeiro nível)</li>
+			<ol>
+				<li>Subitem 7 (segundo nível)</li>
+				<li>Subitem 8 (segundo nível)</li>
+				<ol>
+					<li>Subitem 9 (terceiro nível)</li>
+				</ol>
+			</ol>
+		</ol>
+		<h2>Lista não ordenada</h2>
+		<ul>
+			<li>Item 1 (primeiro nível)</li>
+			<ul>
+				<li>Subitem 1 (segundo nível)</li>
+				<li>Subitem 2 (segundo nível)</li>
+				<ul>
+					<li>Subitem 3 (terceiro nível)</li>
+				</ul>
+			</ul>
+			<li>Item 2 (primeiro nível)</li>
+			<ul>
+				<li>Subitem 4 (segundo nível)</li>
+				<li>Subitem 5 (segundo nível)</li>
+				<ul>
+					<li>Subitem 6 (terceiro nível)</li>
+				</ul>
+			</ul>
+			<li>Item 3 (primeiro nível)</li>
+			<ul>
+				<li>Subitem 7 (segundo nível)</li>
+				<li>Subitem 8 (segundo nível)</li>
+				<ul>
+					<li>Subitem 9 (terceiro nível)</li>
+				</ul>
+			</ul>
+		</ul>
+	</body>
+</html>
