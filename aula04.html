@@ -1,0 +1,44 @@
+<html><!--Anotações da terceira aula de html disponibilizada pelo professor Bruno através do link: https://www.youtube.com/watch?v=RX5DFT6fZVA&list=PLx4x_zx8csUgS5ioRmQVBeGHmKBQEyNXQ&index=4-->
+	<head>
+		<title>Aula HTML 04</title>
+	</head>
+	<body>
+		<h1>Aula 04 - Tabelas</h1>
+		<p>Para trabalhar com tabelas em html utilizamos a estrutura table [< table > < / table >] e dentro dessa estrutura definimos as linhas com 			a tag tr [< tr > < / tr >] de table row, que serão dividas em colunas através da tag td [< td > < / td >] de table division.</p>
+		<p>Por padrão, as margens das linhas e das colunas não aparecem, por isso é presico definir o parâmetro border dentro da tag table. Além 			disso, também é possível definir parâmetros de largura (width) e altura (height). Lembrando que as larguras das colunas não distribuídas de 			acordo com o conteúdo preenchido nas suas células, logo, podem haver colunas mais largas do que outras. Em ordem de fazer uma melhor 				distribuição da largura, pode-se definir o parâmetro largura diretamente na tag das colunas.</p>
+		<p>Ao trabalhar com tabelas é nescessário manter em mente duas propriedades importantes que são cellspacing e cellpadding. Cellspacing 				define o espaçamento entre as células da tabela. Enquanto que o cellpadding define uma margem entre a borda e o conteúdo das células.</p>
+		<p>Ainda sobre os possíveis parâmetros para as tabelas, temos o align e valign. O primeiro define o alinhamento horizontal seja do conteúdo 			dentro das células ou seja da própria tabela dentro da página. Enquanto o segundo definne o alinhamento vertical, novamente, em relação ao 			conteúdo da célula ou em relação a tabela na página.</p>
+		<p>Outra coisa interessante para se fazer com as tabelas é a mesclagem de células, seja no sentido da linha ou no sentido da coluna. Para 			mesclar células na mesma linha, ou seja, mesclar colunas, utilizamos o parâmetro colspan e atribuímos a ele a quantia de células que 				queremos mesclar, por exemplo,colspan="3". Agora, para mesclar células na mesma coluna, isto é, mesclar linhas, utiliza-se o parâmetro 				rowspan novamente atribuindo a ele a quantia de célula que devem ser mesclada, por exemplo, rowspan="2".</p>
+		<p>Para finalizar a questão de parametrização, vale destacar que a ordem com que os parâmetros são inseridos nas tags não altera o resultado 		final. Portanto, pode-se inserir os parâmetros conforme a necessidade em que se apresentam.</p>
+		<p><b>Observsação:</b> Não é interessante deixar algumas tags, como o table divisiion, sem preenchimento pois dificulta a sua visualização 			no navegador. E não adianta dar um espaço entre a abertura e o fechamento da tag. Deve ser utilizado o código que indica espaço: &nbsp;.</p>
+		<table border="1" width="600" cellspacing="0" cellpadding="0" align="center"><!--Valores para align: left, center, right e justify-->
+			<tr height="50">
+				<td align="center" colspan="3" valign="top">Título da Tabela</td><!--Valores para valign: top, center e bottom-->
+			</tr>
+			<tr>
+				<td width="200" align="center">Linha 1 Coluna 1</td>
+				<td width="200" align="center">Linha 1 Coluna 2</td>
+				<td width="200" align="center">Linha 1 Coluna 3</td>
+			</tr>
+			<tr>
+				<td width="200" align="center">Linha 2 Coluna 1</td>
+				<td width="200" align="center">Linha 2 Coluna 2</td>
+				<td width="200" align="center">Linha 2 Coluna 3</td>
+			</tr>
+			<tr>
+				<td width="200" align="center">Linha 3 Coluna 1</td>
+				<td width="200" align="center">Linha 3 Coluna 2</td>
+				<td width="200" align="center">Linha 3 Coluna 3</td>
+			</tr>
+			<tr>
+				<td width="200" align="center" rowspan="2">Mesclagem de linhas</td>
+				<td width="200" align="center">&nbsp;</td>
+				<td width="200" align="center">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="200" align="center">&nbsp;</td>
+				<td width="200" align="center">&nbsp;</td>
+			</tr>
+		</table>
+	</body>
+</html>
