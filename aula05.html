@@ -1,0 +1,51 @@
+<html><!--Anotações da terceira aula de html disponibilizada pelo professor Bruno através do link:-->
+	<head>
+		<title>Aula 05 HTML</title>
+		<!--CSS incorporado-->
+		<style type="text/css">
+			h1{	color: #AA00AA;
+				font-size:30px;
+				font-family:Verdana,Arial;
+				letter-spacing: -3px;
+				word-spacing :10px;
+				text-decoration: underline; /*Valores para text-decoration: underline, overline e line-through*/
+				text-align: center; /*Valores para text-align: left, center, right e justify*/
+				font-style: italic;
+				text-transform: capitalize; /*Valores para text-transform: uppercase, lowercase, capitalize*/
+			}
+			
+			p{	text-align: justify;
+				text-indent:80px;
+				padding-left: 20px;
+				padding-right: 20px;}
+			ul{	padding-left:120px;
+				padding-right: 20px;}
+		</style>
+	</head>
+	<body>
+		<h1>Aula 05 - Formatação de texto com CSS</h1>
+		<p>O Cascading Style Sheets (CSS), ou seja, Folhas de Estilo em Cascatas. É a maneira mais indicada de formatar/estilizar o código criado 			por linguagens como HTML, XML ou XHTML.</p>
+		<p>O CSS permite formatação de tags, isto é, é possível indicar um estilo para uma tag e sempre que ela for utilizada será exibida com essa 			formatação. Isso proporciona uma padronização para a página e uma facilidade na progrmação.</p>
+		<h1>Segundo Título</h1>
+		<p>É possível trabalhar com o CSS de três formas diferentes: Incorporado, ou seja, abrindo uma tag de estilo no documento; Inline, isto é, 			abrindo o parâmetro de estilo dentro do próprio comando html; e Externo, onde existe um arquivo destinado ao CSS que posteriormente é 				linkado ao arquivo HTML.</p>
+		<h1>Terceiro Título</h1>
+		<p>Para formatar uma tag em css, utiliza-se o nome da tag como identificador e os parâmetros a serem formatados aparecem entre chaves 				{}.</p>
+		<p>Segue abaixo alguns dos parâmetros que podem ser formatados com CSS:</p>
+		<ul type="square">
+			<li>color: Define a cor. Recebe valores em texto (red) ou em hexadecimal (#FF0000).</li>
+			<li>font-size: Define o tamanho da fonte em pixels.</li>
+			<li>font-family: Define o tipo da fonte do texto. É possível trabalhar com mais de uma fonte neste parâmetro. Caso não encontre 				a primeira fonte especificada, procura pela próxima e assim em diante.</li>
+			<li>letter-spacing: Define o espaçamento entre as letras em pixels utilizando tanto valores positivos como negativos.</li>
+			<li>word-spacing: Define o espaçamento entre as palavras em pixels utilizando tanto valores positivos como negativos.</li>
+			<li>text-decoration: Define uma decoração que pode aparecer no texto, por exemplo, sublinhado.</li>
+			<li>text-align: Define o alinhamento do texto à direta, à esqueda, centralizdo ou justificado.</li>
+			<li>font-style: Define o estilo do texto, por exemplo, itálico.</li>
+			<li>text-transform: Define uma transformação no texto, por exemplo, todas letras maiúsculas, todas as letras minúsculas ou somente a 			primeira letra de cada palavra maiúscula.</li>
+			<li>text-indent: Define a identação do texto, por exemplo, para o espaçamento do parágrafo, em pixels.</li>
+			<li>padding-left: Define o espaçamento da página à esquerda em pixels.</li>
+			<li>padding-right: Define o espaçamento da página à direira em pixels.</li>
+		</ul>
+		<h1>Quarto Título</h1>
+		<p>Ás vezes, deseja-se formartar apenas uma <!--CSS in-line--><span style="color:#FF00FF;font-weight:bold;">parte do texto</span> sem que 		atrapalhe a formatação do resto. Para realizar essa tarefa, utiliza-se a tag < span > < / span >  que defini uma caixa no ponto em que a 		formação é desejada e então formata-se essa caixa. Lembrando que span é diferente de div. Uma das diferenças é que a tag span não ocupa um 		espaço na página.</p>
+	</body>
+</html>
